@@ -1,0 +1,38 @@
+@import "abstracts/variables";
+
+.modal-container {
+  position: fixed !important ;
+  top: 0;
+  left: 0;
+  height: 100vh !important;
+  background: $chatbot-modal-background;
+  & .card {
+    overflow: hidden;
+    border-radius: $chatbot-border-radius;
+    background: $chatbot-color-white-100;
+    width: 480px !important;
+    & h3 {
+      color: $chatbot-color-blue-dark-100;
+      margin-top: 48px;
+    }
+    & p {
+      margin-top: 16px;
+      margin-bottom: 64px;
+      color: $chatbot-color-blue-dark-80;
+    }
+    & h3,
+    & p {
+      padding-left: 48px;
+    }
+    & button {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin: 0 12px;
+    }
+  }
+
+  & .btn-container {
+    background: $chatbot-color-blue-sky-100;
+    height: 96px;
+  }
+}

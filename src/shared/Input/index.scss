@@ -1,0 +1,15 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+input {
+  border: 1px solid $chatbot-color-blue-dark-80;
+  font-size: $chatbot-desktop-input-fontsize;
+  border-radius: $chatbot-border-radius;
+  padding: 14px;
+
+  @include responsive(tablet) {
+    font-size: $chatbot-tablet-input-fontsize;
+  }
+  @include responsive(mobile) {
+    font-size: $chatbot-mobile-input-fontsize;
+  }
+}

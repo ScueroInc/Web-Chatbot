@@ -1,0 +1,70 @@
+h1 {
+  font-size: $chatbot-desktop-h1-fontsize;
+
+  @include responsive(tablet) {
+    font-size: $chatbot-tablet-h1-fontsize;
+  }
+  @include responsive(mobile) {
+    font-size: $chatbot-mobile-h1-fontsize;
+  }
+}
+
+h2 {
+  font-size: $chatbot-desktop-h2-fontsize;
+
+  @include responsive(tablet) {
+    font-size: $chatbot-tablet-h2-fontsize;
+  }
+
+  @include responsive(mobile) {
+    font-size: $chatbot-mobile-h2-fontsize;
+  }
+}
+
+h3 {
+  font-size: $chatbot-desktop-h3-fontsize;
+
+  @include responsive(tablet) {
+    font-size: $chatbot-tablet-h3-fontsize;
+  }
+
+  @include responsive(mobile) {
+    font-size: $chatbot-mobile-h3-fontsize;
+  }
+}
+
+p.major {
+  font-size: $chatbot-desktop-paragraph-major-fontsize;
+
+  @include responsive(tablet) {
+    font-size: $chatbot-tablet-paragraph-major-fontsize;
+  }
+
+  @include responsive(mobile) {
+    font-size: $chatbot-mobile-paragraph-major-fontsize;
+  }
+}
+
+p.medium {
+  font-size: $chatbot-desktop-paragraph-medium-fontsize;
+
+  @include responsive(tablet) {
+    font-size: $chatbot-tablet-paragraph-medium-fontsize;
+  }
+
+  @include responsive(mobile) {
+    font-size: $chatbot-mobile-paragraph-medium-fontsize;
+  }
+}
+
+p.minor {
+  font-size: $chatbot-desktop-paragraph-minor-fontsize;
+
+  @include responsive(tablet) {
+    font-size: $chatbot-tablet-paragraph-minor-fontsize;
+  }
+
+  @include responsive(mobile) {
+    font-size: $chatbot-mobile-paragraph-minor-fontsize;
+  }
+}

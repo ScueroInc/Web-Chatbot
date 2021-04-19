@@ -1,0 +1,28 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+.login-card-container {
+  width: 600px !important;
+  position: relative;
+  height: 568px;
+  border-radius: $chatbot-border-radius;
+  background: $chatbot-color-white-100;
+
+  & h1{
+      color: $chatbot-color-blue-dark-100;
+  }
+  & p{
+      color:  $chatbot-color-blue-dark-80;
+      text-align: center;
+      width: 60%;
+      margin-top: 8px;
+      @include responsive(mobile){
+        width: 80%;
+      }
+  }
+
+  @include responsive(mobile){
+    width: 80% !important;
+    height: 400px ;
+  }
+}

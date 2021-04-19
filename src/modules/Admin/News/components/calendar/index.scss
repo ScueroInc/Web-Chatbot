@@ -1,0 +1,16 @@
+@import "abstracts/variables";
+.calendar-container {
+    width: 20%;
+  & button {
+    background: $chatbot-color-white-100;
+    color: $chatbot-color-black-100;
+  }
+
+  & .react-calendar__month-view__days__day--weekend {
+    color: #a7a7a7;
+  }
+  & .react-calendar__tile--active {
+    background: rgb(13, 49, 253) !important;
+    color: $chatbot-color-white-100;
+  }
+}

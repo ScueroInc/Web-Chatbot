@@ -1,0 +1,30 @@
+.loader {
+  border-radius: 24px;
+  background: transparent;
+  border: 2px solid transparent;
+  margin-right: 8px;
+  transition: all 0.2s ease-in-out;
+  -webkit-animation: load3 1s infinite linear;
+  animation: load3 1s infinite linear;
+}
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

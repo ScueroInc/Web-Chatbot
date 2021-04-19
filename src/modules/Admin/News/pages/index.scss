@@ -1,0 +1,19 @@
+@import "abstracts/variables";
+
+.news-page-container {
+  padding: 64px 128px 0 128px;
+  & .button-container {
+    & .button {
+      margin: 0 12px;
+    }
+  }
+  & .news-section-container{
+      margin-top: 64px;
+  }
+  & .news-list-container {
+    width: 75% !important;
+    & h3{
+        color: $chatbot-color-blue-dark-100;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+.home-card-container {
+  position: relative;
+  width: 32% !important;
+  text-decoration: none;
+  @include responsive(mobile) {
+    width: 100% !important;
+    margin-bottom: 64px;
+  }
+  & .image {
+    height: 280px;
+
+    @include responsive(tablet) {
+      height: 260px;
+    }
+    @include responsive(mobile) {
+      height: auto;
+    }
+  }
+  & img {
+    width: 80%;
+
+    @include responsive(mobile) {
+      width: 100%;
+    }
+  }
+  & h2,
+  & p {
+    width: 80%;
+    margin: 0 auto;
+    @include responsive(mobile){
+      width: 100%;
+      margin: 0 auto;
+
+    }
+  }
+
+  & h2 {
+    color: $chatbot-color-blue-dark-100;
+    margin-bottom: 32px;
+
+    @include responsive(mobile){
+      margin: 24px 0 8px 0;
+
+    }
+  }
+
+  & p {
+    color: $chatbot-color-blue-dark-80;
+  }
+}

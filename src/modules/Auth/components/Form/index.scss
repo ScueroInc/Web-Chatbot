@@ -1,0 +1,27 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+.login-form {
+  margin-top: 32px;
+  position: relative;
+  & .field {
+    margin: 4px 0;
+  }
+  & .login-button-submit {
+    margin-top: 12px;
+  }
+  & .login-error {
+    color: $chatbot-color-red-100;
+    margin-top: 22px;
+    font-weight: 700;
+  }
+  & input {
+    @include responsive(mobile) {
+      width: 220px !important;
+    }
+  }
+  & button {
+    @include responsive(mobile) {
+      width: 220px !important;
+    }
+  }
+}

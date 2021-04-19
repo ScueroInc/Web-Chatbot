@@ -1,0 +1,14 @@
+@import "abstracts/mixins";
+
+.home-page-container {
+  margin-top: 96px;
+  padding: 0 128px;
+
+  @include responsive(tablet) {
+    padding: 0 48px;
+  }
+
+  @include responsive(mobile) {
+    flex-wrap: wrap;
+  }
+}

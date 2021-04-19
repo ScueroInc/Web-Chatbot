@@ -1,0 +1,43 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+button {
+  border: none;
+  padding: 12px 0px;
+  cursor: pointer;
+  opacity: 0.87;
+  transition: all 0.1s ease-in-out;
+  background: $chatbot-color-blue-dark-100;
+  border-radius: $chatbot-border-radius;
+  font-size: $chatbot-desktop-button-fontsize;
+  color: $chatbot-color-white-100;
+  transform: scale(1);
+  font-weight: 400;
+  &:hover {
+    opacity: 1;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  @include responsive(tablet){
+    font-size: $chatbot-tablet-button-fontsize;
+
+  }
+
+  @include responsive(mobile){
+    font-size: $chatbot-mobile-button-fontsize;
+
+  }
+}
