@@ -9,8 +9,9 @@ interface IProps {
   toggle(): void;
   loading: boolean;
   callback(): void;
+  toDelete?: number;
 }
-const Modal: React.FC<IProps> = ({ loading, callback, isOpen, toggle }) => {
+const Modal: React.FC<IProps> = ({ loading, callback, isOpen, toggle, toDelete }) => {
   const modalElement = document.getElementById("modal-root");
 
   const close = useCallback(() => toggle(), [toggle]);
@@ -40,7 +41,7 @@ const Modal: React.FC<IProps> = ({ loading, callback, isOpen, toggle }) => {
     >
       <Flex direction="column" className="card">
         <h3>Advertencia</h3>
-        <p className="major">¿Estás seguro de eliminar este artículo?</p>
+        <p className="major">¿Estás seguro de eliminar {toDelete && toDelete === 1 ? 'este artículo' : 'estos artículos' }?</p>
         <Flex
           className="btn-container"
           justifyContent="flex-end"

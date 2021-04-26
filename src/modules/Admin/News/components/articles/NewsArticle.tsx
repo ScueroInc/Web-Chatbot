@@ -7,8 +7,10 @@ interface IProps {
   title?: string;
   urlImage?: string;
   subtitle?: string;
+  selected?: boolean;
+  onselect: (val:boolean)=>void;
 }
-export const NewsArticle: React.FC<IProps> = ({title,subtitle, urlImage}) => {
+export const NewsArticle: React.FC<IProps> = ({title,subtitle, urlImage,selected=false,onselect}) => {
   const [isChecked, setChecked] = useState<boolean>(false);
 
   const onChange = (val: boolean): void => {
@@ -29,7 +31,7 @@ export const NewsArticle: React.FC<IProps> = ({title,subtitle, urlImage}) => {
             src={urlImage ? urlImage : "https://thumbs.dreamstime.com/b/tropical-paradise-4934272.jpg"}
             alt="we"
           />
-          <Checkbox value={isChecked} onChange={onChange} />
+          <Checkbox value={selected} onChange={onselect} />
         </Flex>
       </Flex>
     </>
