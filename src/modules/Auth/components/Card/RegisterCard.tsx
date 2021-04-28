@@ -1,7 +1,8 @@
+import React from "react";
 import { Flex } from "../../../../shared/Flex/Flex";
-import { AuthenticationForm } from "../Form/AuthenticationForm";
+import { RegisterForm } from "../Form/RegisterForm";
 import "./index.scss";
-export const AuthenticationCard: React.FC = () => {
+export const RegisterCard: React.FC = () => {
   return (
     <Flex
       justifyContent={"center"}
@@ -14,7 +15,7 @@ export const AuthenticationCard: React.FC = () => {
         Registrese para tener acceso a las herramientas de administrador de la
         aplicación Chatbot
       </p>
-      <AuthenticationForm />
+      <RegisterForm />
     </Flex>
   );
 };

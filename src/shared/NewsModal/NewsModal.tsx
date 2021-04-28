@@ -111,8 +111,8 @@ const NewsModal: React.FC<IProps> = ({ loading, callback, isOpen, toggle, newsTo
         </div>
         <div className="field">
           <Input
-            name="Titulo"
-            placeholder="Título"
+            name="subtitle"
+            placeholder="Subtítulo"
             type="text"
             value={subtitle}
             required={true}
@@ -125,8 +125,8 @@ const NewsModal: React.FC<IProps> = ({ loading, callback, isOpen, toggle, newsTo
         </div>
         <div className="body-field">
           <Input
-            name="Titulo"
-            placeholder="Título"
+            name="body"
+            placeholder="Cuerpo de la noticia"
             type="textarea"
             value={body}
             required={true}
@@ -142,8 +142,8 @@ const NewsModal: React.FC<IProps> = ({ loading, callback, isOpen, toggle, newsTo
         </div>
         <div className="field">
           <Input
-            name="title"
-            placeholder="Título"
+            name="score"
+            placeholder="Puntaje"
             type="text"
             value={score}
             required={true}
@@ -156,8 +156,8 @@ const NewsModal: React.FC<IProps> = ({ loading, callback, isOpen, toggle, newsTo
         </div>
         <div className="field">
           <Input
-            name="subtitle"
-            placeholder="Título"
+            name="url"
+            placeholder="Url de la imagen"
             type="textarea"
             value={imageUrl}
             required={true}

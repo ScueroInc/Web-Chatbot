@@ -3,7 +3,7 @@ import { HandleInputChangeEvent } from "../../../core/constant/HandleInputChange
 import { InputProps } from "../../../shared/Input/Input";
 export const useAuthenticationForm = () => {
   const [email, setEmail] = useState<string>("");
-  const [pasword, setPassword] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
 
   const handleEmail = (e: HandleInputChangeEvent): void => {
     setEmail(e.target.value);
@@ -29,7 +29,7 @@ const passwordProps: InputProps = {
     onChange: handlePassword,
     placeholder: "Password",
     type: "password",
-    value: pasword,
+    value: password,
     width: '286px',
     isSecure: true,
     required: true,

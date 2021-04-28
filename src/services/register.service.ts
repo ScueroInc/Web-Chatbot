@@ -14,15 +14,3 @@ export function register_admin(username: string, password: string, firstName: st
     });
 }
 
-export function register_client(username: string, password: string, firstName: string,
-    lastName: string, birthdayString: string, email: string, gender: string) {
-    return axios.post(API_URLS.POST_CLIENT_REGISTER_URL, {
-        username: username,
-        password: password,
-        firstName: firstName,
-        lastName: lastName,
-        birthdayString: birthdayString,
-        email: email,
-        gender: gender
-    });
-}

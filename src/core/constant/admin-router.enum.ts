@@ -1,6 +1,7 @@
 export enum AdminRouterEnum {
     HOME            = "/",
-    NEWS            =  "/noticias",
+    REGISTER        = "/registro",
+    NEWS            = "/noticias",
     QUESTIONNARIES  = "/cuestionarios",
     DASHBOARD       = "/dashboard"
 }
