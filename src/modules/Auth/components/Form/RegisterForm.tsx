@@ -56,6 +56,9 @@ export const RegisterForm: React.FC = () => {
             text="Registrarse"
             type="button"
           />
+          <Flex justifyContent="center" className="register-terms">
+          <p>Al registrarse usted esta aceptando nuestros términos y condiciones </p>
+          </Flex>
         </Flex>
       </form>
     </Flex>

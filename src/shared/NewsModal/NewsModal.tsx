@@ -105,6 +105,7 @@ const NewsModal: React.FC<IProps> = ({ loading, callback, isOpen, toggle, newsTo
             width='286px'
             isSecure={true}
             onChange={(e) => {
+              console.log(e.target.value)
               setTitle(e.target.value);
             }}
           />

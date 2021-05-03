@@ -1,0 +1,29 @@
+@import "abstracts/variables";
+
+.news-article-container {
+  margin: 24px 0;
+  & .news-title {
+    width: 80% !important;
+    & .button {
+      margin-top: 24px;
+    }
+  }
+
+  & img {
+    width: 90%;
+    margin-right: 16px;
+  }
+}
+
+.news-empty-list-container {
+  margin-top: 48px;
+  color: $chatbot-color-blue-dark-80;
+}
+
+.news-loading-container {
+  margin-top: 48px;
+  & p{
+    color: $chatbot-color-blue-dark-80;
+    margin-top: 12px;
+  }
+}

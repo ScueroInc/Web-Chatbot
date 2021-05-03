@@ -19,7 +19,7 @@ export const Checkbox: React.FC<IProps> = ({ onChange, value }) => {
             toggle();
             onChange(!isChecked);
           }}
-          checked={isChecked}
+          checked={value}
         />
         <span className="checkmark"></span>
       </label>

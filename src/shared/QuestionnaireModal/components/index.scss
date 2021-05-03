@@ -1,0 +1,79 @@
+@import "abstracts/variables";
+
+.modal-container {
+  position: fixed !important ;
+  top: 0;
+  left: 0;
+  height: 100vh !important;
+  background: $chatbot-modal-background;
+  & .card {
+    overflow: auto;
+    border-radius: $chatbot-border-radius;
+    background: $chatbot-color-white-100;
+    width: 1500px !important;
+    height: 90vh !important;
+    & h3 {
+      color: $chatbot-color-blue-dark-100;
+    }
+    & p {
+      margin-bottom: 20px;
+      color: $chatbot-color-blue-dark-80;
+
+    }
+    & h3,
+    & p {
+      padding-left: 48px;
+    }
+    & button {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin: 0 12px;
+    }
+    & textarea {
+      width: 90% !important;
+      margin-left: 30px;
+    }
+    & input {
+      width: 90% !important;
+      margin-left: 30px;
+    }
+
+    & .field {
+       margin: 10px 0; 
+    }
+    & .body-field {
+      margin: 10px 0;
+      
+    }
+  }
+
+  & .btn-container {
+    background: $chatbot-color-blue-sky-100;
+    height: 96px;
+  }
+}
+
+.news-article-container {
+  & .news-title {
+    width: 80% !important;
+    .answersContainer {
+      padding-left: 48px;
+      & p {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.news-empty-list-container {
+  margin-top: 48px;
+  color: $chatbot-color-blue-dark-80;
+}
+
+.news-loading-container {
+  margin-top: 48px;
+  & p{
+    color: $chatbot-color-blue-dark-80;
+    margin-top: 12px;
+  }
+}

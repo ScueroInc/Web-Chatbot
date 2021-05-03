@@ -24,4 +24,14 @@
       width: 220px !important;
     }
   }
+  .register-terms {
+    width: 100%;
+    margin-top: 15px;
+    & a {
+      color: $chatbot-color-link-100;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }
 }
