@@ -20,5 +20,5 @@ export const HomeCard: React.FC<IProps> = (props) => {
         <p className="major">{props.description}</p>
       </Flex>
     </Link>
-  );
-};
+  )
+}
