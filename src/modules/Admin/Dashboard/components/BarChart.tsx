@@ -11,8 +11,11 @@ interface IProps {
 const BarChart: React.FC<IProps> = (props) =>{
     return(
         <div>
+            
             <Bar
             type= 'bar'
+            height={600}
+            width = {800}
             data={{
                 labels: props.labels,
                 datasets:[
@@ -40,7 +43,8 @@ const BarChart: React.FC<IProps> = (props) =>{
                 ],
             }}
             options={{
-                maintainAspectRatio: true,
+                maintainAspectRatio: false,
+
                 scales:{
                     y: {
                         beginAtZero: true,
@@ -48,6 +52,9 @@ const BarChart: React.FC<IProps> = (props) =>{
                 }
             }}
             />
+
+        
+           
         </div>
     )
 }

@@ -4,8 +4,10 @@ import { Pie } from 'react-chartjs-2'
 
 interface IProps {
     labels: any;
-    title:any;
+    title: any;
     data: any;
+    display: any;
+    legend?: any;
 }
 
 const PieChart: React.FC<IProps> = (props) =>{
@@ -13,6 +15,8 @@ const PieChart: React.FC<IProps> = (props) =>{
         <div>
         <Pie
         type= 'pie'
+        height={600}
+        width = {800}
         data={{
         labels: props.labels,//['Red', 'Orange', 'Yellow', 'Green', 'Blue'],
         datasets:[
@@ -42,6 +46,21 @@ const PieChart: React.FC<IProps> = (props) =>{
 
         options={{
             maintainAspectRatio: false,
+            plugins:{
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    text: props.legend,
+                    display: props.display,
+                    color: 'rgb(0, 191, 255)',
+                    font: {
+                        size:15,
+                        weight: 'normal'
+                    }
+                }
+
+            }
         }}
         />
         

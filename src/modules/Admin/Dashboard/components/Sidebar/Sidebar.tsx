@@ -1,23 +1,29 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "./index.scss";
+
 const Sidebar = () => {
     return (
         <div className="sidebar2">
             <ul>
                 <li>
-                    <Link to= "/dashboard/usability" className="btn btn-primary"> Usabilidad</Link>
+                    <NavLink to= "/dashboard/usability" exact className= "rounded py-2"
+                    activeClassName="active"> Usabilidad</NavLink>
                 </li>
                 <li>
-                    <Link to= "/dashboard/satisfaction"> Satisfacción</Link>
+                    <NavLink to= "/dashboard/satisfaction" 
+                    activeClassName="active"> Satisfacción</NavLink>
                 </li>
                 <li>
-                    <Link to= "/dashboard/userage"> Edad de los Usuarios</Link>
+                    <NavLink to= "/dashboard/userage" 
+                    activeClassName="active"> Edad de los Usuarios</NavLink>
                 </li>
                 <li>
-                    <Link to= "/dashboard/retentionrate"> Tasa de Retención</Link>
+                    <NavLink to= "/dashboard/retentionrate" 
+                    activeClassName="active"> Tasa de Retención</NavLink>
                 </li>
                 <li>
-                    <Link to= "/dashboard/faq"> Preguntas Frecuentes</Link>
+                    <NavLink to= "/dashboard/faq" 
+                    activeClassName="active"> Preguntas Frecuentes</NavLink>
                 </li>
             </ul>
         </div>

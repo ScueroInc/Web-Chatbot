@@ -3,7 +3,6 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import { SatisfactionPage } from "./SatisfactionPage";
 import { UsabilityPage } from "./UsabilityPage";
 import "./index.scss";
-import "bootstrap/scss/bootstrap.scss"
 import { UserAgePage } from "./UserAgePage";
 import { RetentionPage } from "./RetentionPage";
 import { FAQPage } from "./FAQPage";

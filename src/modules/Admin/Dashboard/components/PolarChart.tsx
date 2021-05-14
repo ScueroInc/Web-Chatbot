@@ -14,6 +14,8 @@ const PolarChart: React.FC<IProps> = (props) =>{
         <div>
         <PolarArea
         type= 'polarArea'
+        height={600}
+        width = {800}
         data={{
         labels: props.labels,
         datasets:[

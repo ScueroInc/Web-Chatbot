@@ -10,4 +10,9 @@ export const API_URLS = {
     NEW_QUESTIONARY_URL: `${BASE_URL}/Questionary`,
     UPDATE_QUESTIONARY_URL: `${BASE_URL}/Questionary`,
     GET_BY_ID_QUESTIONARY_URL: `${BASE_URL}/Questionary`,
+    GET_DASHBOARD_AGE_RANGE_URL: `${BASE_URL}/Dashboard/AgeRange`,
+    GET_DASHBOARD_QUESTION_URL: `${BASE_URL}/Dashboard/Questions`,
+    GET_DASHBOARD_SURVEY_URL: `${BASE_URL}/Dashboard/Survey`,
+    GET_DASHBOARD_RETENTION_RATE_URL: `${BASE_URL}/Dashboard/RetentionRate`,
+    GET_DASHBOARD_USABILITY_RATE_URL: `${BASE_URL}/Dashboard/UsabilityRate`,
 }

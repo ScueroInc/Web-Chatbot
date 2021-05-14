@@ -2,9 +2,10 @@
 
 .sidebar2 {
     width: 14rem;
+    font-size: 25px;
     height: calc(100vh - 52px);
-    border-right: 10px solid #a0cddf;
-    background: rgb(207, 58, 58);
+    border-right: 2px solid #a0cddf;
+    background: rgb(231, 248, 246);
     ul {
         list-style: none;
         padding: 1rem 2rem;
@@ -12,6 +13,10 @@
             margin-bottom: 1rem;
             a {
                 text-decoration: none;
+                &.active{
+                    background: rgb(160, 224, 217);
+                    border-radius: 5px;
+                }
             }
         }
     }
