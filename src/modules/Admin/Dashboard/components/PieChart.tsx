@@ -8,6 +8,7 @@ interface IProps {
     data: any;
     display: any;
     legend?: any;
+    percentage?: any;
 }
 
 const PieChart: React.FC<IProps> = (props) =>{
@@ -22,7 +23,7 @@ const PieChart: React.FC<IProps> = (props) =>{
         datasets:[
             {
                 label: props.title,//'Preguntas',
-                data: props.data,//[12,19,3,5,2],
+                data: props.data,//[12%,19%,30%,39],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -45,8 +46,10 @@ const PieChart: React.FC<IProps> = (props) =>{
         }}
 
         options={{
+
             maintainAspectRatio: false,
             plugins:{
+                
                 legend: {
                     position: 'top',
                 },

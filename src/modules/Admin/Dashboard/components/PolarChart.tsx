@@ -5,7 +5,7 @@ import { PolarArea } from 'react-chartjs-2'
 
 interface IProps {
     labels: any;
-    title:any;
+    
     data: any;
 }
 
@@ -20,7 +20,7 @@ const PolarChart: React.FC<IProps> = (props) =>{
         labels: props.labels,
         datasets:[
             {
-                label: props.title,
+                
                 data: props.data,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',

@@ -29,10 +29,11 @@ export const UserAgePage: React.FC  = () => {
     return(
         <div>
             <h1>Edad de los Usuarios</h1>
+            <h2>Indicador que permite ver los rangos de edades de nuestro público</h2>
            {!loadingInfo && ageInfo && ageInfo.length > 0 && (
                 <PieChart
                 labels={ageInfo.map((info:any) => { return info.age + " Años"})}
-                title='Preguntas'
+                title='Rango de edades'
                 data={ageInfo.map((info:any) => { return info.quantity.toString()})}
                 display = {false}
             />

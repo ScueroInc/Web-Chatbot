@@ -4,14 +4,15 @@ import {} from 'chart.js'
 
 interface IProps {
     labels: any;
-    title:any;
+    title?:any;
     data: any;
+    display: any;
+    legend: any;
   }
 
 const BarChart: React.FC<IProps> = (props) =>{
     return(
         <div>
-            
             <Bar
             type= 'bar'
             height={600}
@@ -20,7 +21,7 @@ const BarChart: React.FC<IProps> = (props) =>{
                 labels: props.labels,
                 datasets:[
                     {
-                        label: props.title,
+                        label: props.legend,
                         data: props.data,
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
@@ -44,7 +45,21 @@ const BarChart: React.FC<IProps> = (props) =>{
             }}
             options={{
                 maintainAspectRatio: false,
-
+                plugins:{
+                    legend: {
+                        position: 'bottom',
+                    },
+                    title: {
+                        text: props.title,
+                        display: props.display,
+                        color: 'rgb(0, 191, 255)',
+                        font: {
+                            size: 22,
+                            weight: 'normal'
+                        }
+                    }
+    
+                },
                 scales:{
                     y: {
                         beginAtZero: true,
