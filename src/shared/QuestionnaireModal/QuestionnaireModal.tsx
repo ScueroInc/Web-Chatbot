@@ -93,7 +93,6 @@ const QuestionnaireModal: React.FC<IProps> = ({ loading, callback, isOpen, toggl
               }
             ]
           }
-          //console.log(questionnairePayload);
           callback(questionnairePayload, 'PUT')
         }
       } else {
@@ -167,7 +166,8 @@ const QuestionnaireModal: React.FC<IProps> = ({ loading, callback, isOpen, toggl
     return () => {
       document.removeEventListener("keydown", handleEscape, false);
     };
-  }, [handleEscape, isOpen/* , newsToEdit */]);
+    // eslint-disable-next-line
+  }, [handleEscape, isOpen]);
 
   if (!isOpen) return null;
 
